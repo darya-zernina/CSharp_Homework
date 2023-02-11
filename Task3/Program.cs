@@ -3,9 +3,13 @@
 // 2 -> " -2, -1, 0, 1, 2"
 
 Console.Write("Введите число: ");
-int x = int.Parse(Console.ReadLine());
-for (int i >= -x; i <= x)
+int N = int.Parse(Console.ReadLine());
+int Number = -N;
+while (Number < N);
 {
-    System.Console.WriteLine("i");
-}
+   Number = Number + 1; 
+} 
+System.Console.WriteLine(Number);
+    
+
 
