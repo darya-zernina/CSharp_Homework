@@ -4,10 +4,10 @@
 
 Console.WriteLine("Введите число: ");
 int N = int.Parse(Console.ReadLine ());
-int number = N;
+
 int x = 2;
 
-if(number > 1)
+if(x > 1)
 {
     while(x <= N)
     {
