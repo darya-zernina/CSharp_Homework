@@ -5,7 +5,7 @@
 
 Console.WriteLine("Введите число: ");
 int Number = int.Parse(Console.ReadLine());
-int i = number % 2;
+int i = Number % 2;
 
 if(i == 0)
 {
