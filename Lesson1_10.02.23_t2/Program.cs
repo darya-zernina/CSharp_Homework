@@ -7,7 +7,6 @@ Console.Write("Введите число 1:  ");
 int x = int.Parse(Console.ReadLine());
 Console.Write("Введите число 2:  ");
 int y = int.Parse(Console.ReadLine());
-Console.WriteLine("Hello, World!");
 if (x > y) 
 System.Console.WriteLine(x);
 else Console.WriteLine(y);
