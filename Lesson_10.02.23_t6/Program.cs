@@ -5,12 +5,13 @@
 
 Console.WriteLine("Введите число: ");
 int Number = int.Parse(Console.ReadLine());
-int x = Number % 2;
-if (x == 0);
+int i = number % 2;
+
+if(i == 0)
 {
-    Console.WriteLine("да");
+    Console.WriteLine("Да");
 }
-else  
+else
 {
     Console.WriteLine("Нет");
 }
