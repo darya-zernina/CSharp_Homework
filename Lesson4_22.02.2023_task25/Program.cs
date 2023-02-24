@@ -20,5 +20,4 @@ int FindSQR(int numberA, int numberB)
   Console.Write("Введите число B: ");
   int numberB = Convert.ToInt32(Console.ReadLine());
 
-  int SQR = FindSQR(numberA, numberB);
-  Console.WriteLine("Ответ: " + SQR);
+    Console.WriteLine($"Ответ = {FindSQR(numberA, numberB)}");
