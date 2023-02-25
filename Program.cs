@@ -2,3 +2,25 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
+
+int SumLenthNumber(int number)
+{
+    int counter = Convert.ToString(number).Length;
+    int a = 0;
+    int result = 0;
+
+    for (int i = 0; i < counter; i++)
+    {
+      a = number - number % 10;
+      result = result + (number - a);
+      number = number / 10;
+    }
+   return result;
+  }
+
+// int sumLenthNumber = SumLenthNumber(number);
+// Console.WriteLine("Сумма цифр в числе: " + sumNumber);
+
+System.Console.Write("Введите число: "); 
+int number = Convert.ToInt32(Console.ReadLine()); 
+Console.WriteLine($"Ответ: {SumLenthNumber(result)}");
