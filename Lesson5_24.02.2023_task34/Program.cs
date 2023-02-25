@@ -32,3 +32,4 @@ Console.WriteLine("Вот наш массив: ");
 PrintArray(numbers);
 Console.WriteLine($"всего {numbers.Length} чисел");
 
+
