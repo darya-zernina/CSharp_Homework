@@ -19,19 +19,20 @@ void PrintArray(int[] inArray)
         } 
 } 
 
-int Sum (int[] inArray)
-{     
-    int result = Convert.ToInt32("ReadLine ");
-    result = 0;
+void FindSum(int[] array)
+ {
+    int result = 0; 
     
-    for (int i = 0; i < inArray.Length; i++)
-    {         
-        if(i % 2 == 1); 
-        result = inArray[i] + inArray[i]; 
-    }
-    return result;
-} 
+    foreach (int el in array)
+    {        
+        if (el%2 == 1)       
+    {             
+        result = el + el; 
+    } 
+    }               
+    Console.WriteLine($"Сумма нечетных чисел = {FindSum}");
+ }
  int[] array = GetArray(12, -9, 9);
  PrintArray(array); 
  System.Console.WriteLine();
-     Console.WriteLine($"Сумма нечетных чисел = {Sum}"); 
+     Console.WriteLine($"Сумма нечетных чисел = {FindSum}"); 
