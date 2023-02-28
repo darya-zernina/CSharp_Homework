@@ -16,8 +16,15 @@ void PrintArray(int[] numbers)
     Console.Write("]");
     Console.WriteLine();
 }
-
-
+int FindSum(int[] inArray, int number)
+{
+ int index = 0;
+for (int i = 0; i < inArray.Length; i++)
+if (inArray[i] % 2 == 0)
+index++; 
+return index  
+}
+ 
 Console.WriteLine("Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
@@ -26,9 +33,10 @@ Console.WriteLine("Вот наш массив: ");
 PrintArray(numbers);
 Console.WriteLine($"всего {numbers.Length} чисел");
 
-int index = 0;
-for (int i = 0; i < numbers.Length; i++)
-if (numbers[i] % 2 == 0)
-index++;
-Console.WriteLine(index);
+int sum = FindSum(index);
+
+//Console.WriteLine($"Ответ: {FindSum(number)}");
+//int SQR = FindSQR(numberA, numberB);
+ // Console.WriteLine("Ответ: " + SQR);
+   // Console.WriteLine($"Ответ = {FindSQR(numberA, numberB)}");
 
