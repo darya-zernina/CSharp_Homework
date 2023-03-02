@@ -3,17 +3,17 @@
 // 1, -7, 567, 89, 223-> 3
 
 Console.Write("Введите любое количество чисел через пробел: ");
-int[] numbers = StringToNum(Console.ReadLine());
-PrintArray(numbers);
-int sum = 0;
-for(int i = 0; i < numbers.Length; i++)
+int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+int count = 0;
+for (int i = 0; i < arr.Length; i++)
 {
-if (numbers[i] > 0)
+    if (arr[i] > 0)
     {
-    sum++;
+        count++;
     }
 }
-Console.WriteLine("Количество чисел больше 0 составляет: " + sum);
+ 
+Console.WriteLine($"Количество чисел больше 0: {count}");
 
 
 
